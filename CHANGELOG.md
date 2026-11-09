@@ -113,18 +113,18 @@
   s2_A+s2_B (~1e-7), single-link limit recovered, quadrature == Monte Carlo.
   New tests: `tests/test_two_link.py`. See docs/TWO_LINK_FADING.md.
 
-### v2.0.0 — Multi-Turbulence Framework (this repository)
+### v2.0.0 - Multi-Turbulence Framework (this repository)
 **Status:** Completed
 
 - New modular `src/turbulence/` package with a polymorphic
   `TurbulenceChannel` interface, implementing:
-  - `DeterministicChannel` (Model 1) — reuses validated FSO link budget
+  - `DeterministicChannel` (Model 1) - reuses validated FSO link budget
     from v1.0.0 unchanged.
-  - `LogNormalChannel` (Model 2) — reuses validated log-normal turbulence
+  - `LogNormalChannel` (Model 2) - reuses validated log-normal turbulence
     from v1.1.0 unchanged.
-  - `GammaGammaChannel` (Model 3) — new, first-principles implementation
+  - `GammaGammaChannel` (Model 3) - new, first-principles implementation
     (PDF, alpha/beta from Rytov theory, moments, sampling, CDF).
-  - `CorrectedGammaGammaChannel` (Model 4) — new: aperture averaging,
+  - `CorrectedGammaGammaChannel` (Model 4) - new: aperture averaging,
     beam wander, Farid-Hranilovic pointing-error model, all individually
     toggleable and verified to reduce to plain Gamma-Gamma when disabled.
   - `turbulence_factory.create_channel(model=...)` including `"auto"`
@@ -134,11 +134,11 @@
   (`legacy_baseline.key_rate`, from v0.1.0) is never modified.
 - New `monte_carlo.py` (fixed, adaptive-stopping, and benchmark modes)
   and `quadrature.py` (scipy adaptive, Gauss-Legendre, Gauss-Laguerre,
-  benchmark) — generalizes and supersedes the log-normal-only quadrature
+  benchmark) - generalizes and supersedes the log-normal-only quadrature
   work begun in v1.1.1, extending ergodic averaging to all four
   turbulence models. Cross-validated Monte Carlo against quadrature to
   <0.1% agreement on the ergodic TF-QKD key rate across all three
-  stochastic models (see docs/VALIDATION.md) — the same MC-vs-quadrature
+  stochastic models (see docs/VALIDATION.md) - the same MC-vs-quadrature
   relative-error analysis v1.1.1 planned, now completed and extended
   beyond log-normal.
 - New `adaptive_alpha.py`: ergodic fixed-alpha optimization
@@ -176,22 +176,22 @@ the kind of regression a future change to `quadrature.py` or a new
 turbulence model could reintroduce)
 
 - `scipy.special.kv` overflow for large/asymmetric Gamma-Gamma
-  (alpha, beta) — fixed with an `mpmath.besselk` fallback in
+  (alpha, beta) - fixed with an `mpmath.besselk` fallback in
   `gamma_gamma._log_kv`.
 - Aperture-averaging rescaling of (alpha, beta) could go negative for
-  strong averaging under a hold-beta-fixed scheme — replaced with a
+  strong averaging under a hold-beta-fixed scheme - replaced with a
   numerically stable symmetric `alpha/A, beta/A` rescaling.
 - Quadrature expectations were bounded by `eta_nominal` instead of the
   physical `eta_max=1`, silently discarding roughly half the probability
-  mass — fixed via `TurbulenceChannel.eta_max`.
+  mass - fixed via `TurbulenceChannel.eta_max`.
 - Adaptive `scipy.integrate.quad` without breakpoint hints could step
   over a narrow Gamma-Gamma density spike and return a confidently-wrong
-  value ~2x off from Monte Carlo — fixed by passing explicit `points`
+  value ~2x off from Monte Carlo - fixed by passing explicit `points`
   breakpoints in `quad_expectation`.
 
 ---
 
-### v1.1.1 — Analytical Log-Normal Averaging Framework
+### v1.1.1 - Analytical Log-Normal Averaging Framework
 **Status:** In Progress (superseded/completed by v2.0.0's `quadrature.py`
 and `adaptive_alpha.py`, generalized beyond log-normal to all four models)
 
@@ -211,7 +211,7 @@ and `adaptive_alpha.py`, generalized beyond log-normal to all four models)
 
 ---
 
-### v1.1.0 — Log-Normal Turbulence Integration
+### v1.1.0 - Log-Normal Turbulence Integration
 **Status:** Completed
 
 **Features**
@@ -232,7 +232,7 @@ and `adaptive_alpha.py`, generalized beyond log-normal to all four models)
 
 ---
 
-### v1.0.0 — Deterministic Free-Space Optical Channel
+### v1.0.0 - Deterministic Free-Space Optical Channel
 **Status:** Completed
 
 **Features**
@@ -250,7 +250,7 @@ and `adaptive_alpha.py`, generalized beyond log-normal to all four models)
 
 ---
 
-### v0.1.0 — TF-QKD Security Protocol Foundation
+### v0.1.0 - TF-QKD Security Protocol Foundation
 **Status:** Completed
 
 **Features**
