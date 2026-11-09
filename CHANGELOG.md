@@ -93,7 +93,7 @@
   Cn2, Gamma-Gamma against Log-Normal, a Monte Carlo cross-check, ten figures) and its report,
   `docs/GAMMA_GAMMA_PER_ARM_REPORT.txt`.
 
-### v2.1.0 — Independent fading on Alice–Charlie and Bob–Charlie
+### v2.1.0 - Independent fading on Alice–Charlie and Bob–Charlie
 - **Fix (physics):** the turbulence channel used ONE fading factor at the full
   distance L. TF-QKD has two independent FSO arms, so the end-to-end
   transmittance is now eta = eta_A * eta_B with separate log-normal / Gamma-Gamma
