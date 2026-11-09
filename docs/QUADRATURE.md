@@ -1,4 +1,4 @@
-# QUADRATURE.md — Numerical Quadrature Engine
+# QUADRATURE.md - Numerical Quadrature Engine
 
 Implementation: `src/quadrature.py`.
 

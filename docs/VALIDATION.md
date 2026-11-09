@@ -1,4 +1,4 @@
-# VALIDATION.md — Numerical Validation
+# VALIDATION.md - Numerical Validation
 
 All numbers below are reproduced by running:
 

@@ -1,4 +1,3 @@
-# Python
 __pycache__/
 *.py[cod]
 *.egg-info/
@@ -8,17 +7,11 @@ venv/
 build/
 dist/
 .ipynb_checkpoints/
-
-# OS / editor
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
-
-# Scratch output of the ablation smoke test
 paper_analysis/ablation/results/smoke/
-
-# LaTeX build artefacts (paper_analysis)
 paper_analysis/latex/**/*.aux
 paper_analysis/latex/**/*.log
 paper_analysis/latex/**/*.out

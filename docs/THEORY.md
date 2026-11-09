@@ -1,4 +1,4 @@
-# THEORY.md — Atmospheric Turbulence Theory for Free-Space Optical TF-QKD
+# THEORY.md - Atmospheric Turbulence Theory for Free-Space Optical TF-QKD
 
 This document derives the physics that underlies every turbulence model
 in `src/turbulence/`. It is deliberately a *working derivation*, not an

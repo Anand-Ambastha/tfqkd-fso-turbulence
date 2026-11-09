@@ -1,4 +1,4 @@
-# TWO_LINK_FADING.md — Independent fading on Alice–Charlie and Bob–Charlie
+# TWO_LINK_FADING.md - Independent fading on Alice–Charlie and Bob–Charlie
 
 ## The issue
 

@@ -1,4 +1,4 @@
-# ATMOSPHERIC_CHANNEL.md — Deterministic FSO Link Budget
+# ATMOSPHERIC_CHANNEL.md - Deterministic FSO Link Budget
 
 Implementation: `src/turbulence/deterministic.py`, reusing
 `legacy_baseline.deterministic_fso_channel`.

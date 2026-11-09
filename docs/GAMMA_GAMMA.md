@@ -1,4 +1,4 @@
-# GAMMA_GAMMA.md — Gamma-Gamma Turbulence Model, Full Derivation
+# GAMMA_GAMMA.md - Gamma-Gamma Turbulence Model, Full Derivation
 
 Implementation: `src/turbulence/gamma_gamma.py`. This document derives
 every equation used there, step by step.

@@ -1,4 +1,4 @@
-# MONTE_CARLO.md — Monte Carlo Expectation Engine
+# MONTE_CARLO.md - Monte Carlo Expectation Engine
 
 Implementation: `src/monte_carlo.py`.
 

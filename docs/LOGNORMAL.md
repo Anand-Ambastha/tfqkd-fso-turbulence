@@ -1,4 +1,4 @@
-# LOGNORMAL.md — Log-Normal Turbulence Model
+# LOGNORMAL.md - Log-Normal Turbulence Model
 
 Implementation: `src/turbulence/lognormal.py`. Per the task constraint,
 this module does **not** modify the existing validated log-normal

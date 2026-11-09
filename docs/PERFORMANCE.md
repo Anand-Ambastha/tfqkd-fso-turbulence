@@ -1,4 +1,4 @@
-# PERFORMANCE.md — Benchmarks
+# PERFORMANCE.md - Benchmarks
 
 Measured on the development container (single CPU core, no GPU), Python
 3.x + NumPy/SciPy. Reproduce with:

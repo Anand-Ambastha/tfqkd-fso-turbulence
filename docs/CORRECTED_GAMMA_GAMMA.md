@@ -1,4 +1,4 @@
-# CORRECTED_GAMMA_GAMMA.md — Aperture Averaging, Beam Wander, Pointing Errors
+# CORRECTED_GAMMA_GAMMA.md - Aperture Averaging, Beam Wander, Pointing Errors
 
 Implementation: `src/turbulence/corrected_gamma_gamma.py`.
 
