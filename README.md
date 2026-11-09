@@ -1,503 +1,195 @@
-
-# TF-QKD / FSO Quantum Communication Research Framework
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Quantum-Communication-purple?style=for-the-badge">
-  <img src="https://img.shields.io/badge/TF--QKD-Research-black?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Finite-Decoy-LP-darkgreen?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Status-Active%20Development-success?style=for-the-badge">
-</p>
-
----
-
-## Overview
-
-A research-oriented implementation and numerical exploration framework
-for Twin-Field-Type Quantum Key Distribution (TF-QKD), finite-decoy
-security analysis, and future Free-Space Optical (FSO) quantum
-communication systems.
-
-This repository is being developed as part of ongoing research and
-exploratory work in:
-
-- Quantum Key Distribution (QKD)
-- Twin-Field Quantum Cryptography
-- Free-Space Optical (FSO) Communication
-- Atmospheric Optical Channels
-- Satellite Quantum Communication
-- Numerical Security Analysis
-
-The framework currently includes:
-
-- asymptotic TF-QKD simulation,
-- finite-decoy LP estimation,
-- phase-error analysis,
-- key-rate optimization,
-- robustness diagnostics,
-- convergence validation,
-- realistic optical-loss modeling.
-
-The long-term objective of this work is to build a modular
-research-grade simulation environment capable of studying both
-fiber-based and free-space TF-QKD systems under realistic physical
-conditions.
-
----
-
-# Simulation Pipeline
-
-```text
-                ┌──────────────────────────────┐
-                │     Physical Parameters      │
-                │ α, η, pd, θ, ξ, truncation   │
-                └──────────────┬───────────────┘
-                               │
-                               ▼
-                ┌──────────────────────────────┐
-                │     Channel Modeling         │
-                │ loss, mismatch, dark counts  │
-                └──────────────┬───────────────┘
-                               │
-                               ▼
-                ┌──────────────────────────────┐
-                │     Yield Computation        │
-                │ pXX , pZZ , photon yields    │
-                └──────────────┬───────────────┘
-                               │
-                               ▼
-                ┌──────────────────────────────┐
-                │  Cat-State Decomposition     │
-                │ even / odd parity sectors    │
-                └──────────────┬───────────────┘
-                               │
-                               ▼
-                ┌──────────────────────────────┐
-                │   Phase Error Estimation     │
-                │ Eq. (20–21), truncation      │
-                └──────────────┬───────────────┘
-                               │
-                               ▼
-                ┌──────────────────────────────┐
-                │  Finite-Decoy LP Estimation  │
-                │ Eq. (23–26), CVXPY solver    │
-                └──────────────┬───────────────┘
-                               │
-                               ▼
-                ┌──────────────────────────────┐
-                │     Secret Key Rate          │
-                │ Eq. (17–19), PLOB compare    │
-                └──────────────┬───────────────┘
-                               │
-                               ▼
-                ┌──────────────────────────────┐
-                │ Numerical Diagnostics & Plots│
-                │ convergence, robustness      │
-                └──────────────────────────────┘
-````
-
----
-
-# Current Status
-
-The simulator has progressed through multiple implementation phases.
-
----
-# Version History
-
-## v0.1.0 — TF-QKD Security Protocol Foundation
-**Status:** Completed
-
-### Features
-- Implemented Curty–Azuma–Lo Protocol 3 security proof.
-- X-basis gain and QBER calculations (Eqs. 27–31).
-- Z-basis gain calculations (Eqs. 32–35).
-- Photon-number yield evaluation.
-- Cat-state coefficient generation.
-- Phase-error upper bound estimation.
-- Asymptotic secret key rate (SKR) computation.
-- Signal intensity (α) optimization.
-- PLOB bound comparison.
-
-### Output
-- SKR vs channel loss.
-- Optimized α vs channel loss.
-- Security proof validation.
-
----
-
-## v1.0.0 — Deterministic Free-Space Optical Channel
-**Status:** Completed
-
-### Features
-- Atmospheric attenuation model (Beer–Lambert law).
-- Gaussian beam propagation.
-- Receiver aperture coupling efficiency.
-- Geometric diffraction losses.
-- End-to-end deterministic FSO transmittance model.
-
-### Output
-- Atmospheric transmittance vs distance.
-- Geometric efficiency vs distance.
-- Deterministic TF-QKD SKR vs FSO link distance.
-- PLOB comparison under deterministic FSO loss.
-
----
-
-## v1.1.0 — Log-Normal Turbulence Integration
-**Status:** Completed
-
-### Features
-- Rytov variance computation.
-- Log-normal turbulence model.
-- Energy-neutral fading implementation.
-- Monte Carlo channel realization generation.
-- Ergodic TF-QKD secret key rate estimation.
-- Weak, moderate, and strong turbulence studies.
-- Turbulence statistics validation.
-- σR² validity analysis for weak-fluctuation regime.
-
-### Output
-- Irradiance probability distributions.
-- Turbulence-induced channel statistics.
-- Ergodic SKR under atmospheric turbulence.
-- Deterministic vs turbulent channel comparison.
-
----
-
-## v1.1.1 — Analytical Log-Normal Averaging Framework
-**Status:** In Progress
-
-### Features
-- Derivation of log-normal fading probability density function.
-- Numerical quadrature evaluation of ensemble averages.
-- Average X-basis gain:
-  
-  <pXX>
-
-- Average X-basis QBER:
-
-  <eX>
-
-- Average TF-QKD secret key rate:
-
-  <R>
-
-- Quadrature-based ergodic SKR computation.
-- Monte Carlo validation framework.
-- Relative error analysis between Monte Carlo and quadrature methods.
-- Optimization of signal intensity α under log-normal fading.
-
-### Planned Output
-- Monte Carlo vs quadrature SKR comparison.
-- Relative error vs distance.
-- Optimal α vs distance.
-- Optimized average SKR vs fixed α.
-- Computational complexity and runtime comparison.
-
-### Motivation
-Replace expensive Monte Carlo-only averaging with a mathematically rigorous and computationally efficient ensemble-averaging framework while preserving Monte Carlo validation capability.
----
-# Reproduction Phases (v0.1.0)
-
-## Phase 1 — Foundation and Channel Modeling
-
-Implemented:
-
-* Binary entropy functions
-* Optical transmittance utilities
-* dB ↔ transmittance conversion
-* X-basis gain calculations
-* Z-basis photon-yield calculations
-* Dark-count modeling
-* Polarization mismatch modeling
-* Phase mismatch handling
-* Numerical stability protections
-* Physical sanity diagnostics
-
-Includes:
-
-* channel-loss sweeps,
-* mismatch sensitivity studies,
-* detector-noise analysis.
-
----
-
-## Phase 2 — Cat States and Phase Error Estimation
-
-Implemented:
-
-* Cat-state decomposition
-* Even/odd parity separation
-* Infinite-decoy phase-error estimation
-* Eq. (20) / Eq. (21) implementation
-* Photon-number truncation framework
-* Inner-sum convergence analysis
-* Numerical truncation diagnostics
-
-Includes:
-
-* parity-resolved contributions,
-* convergence studies vs truncation parameter,
-* numerical validation of phase-error bounds.
-
----
-
-## Phase 3 — Secret Key Rate and Numerical Analysis
-
-Implemented:
-
-* Full asymptotic secret-key-rate pipeline
-* Eq. (17–19) implementation
-* PLOB repeaterless bound comparison
-* Alpha-parameter optimization
-* Key-rate vs channel-loss simulations
-* Dark-count sensitivity analysis
-* Polarization mismatch robustness
-* Phase mismatch robustness
-* Numerical convergence diagnostics
-* Figure-generation utilities
-
-Current studies include:
-
-* key rate vs total channel loss,
-* dark-count scaling,
-* phase mismatch sensitivity,
-* polarization mismatch sensitivity,
-* alpha optimization behavior,
-* truncation convergence,
-* comparison against repeaterless bounds.
-
----
-
-## Phase 4 — Finite-Decoy Linear Programming Framework
-
-Implemented:
-
-* Finite-decoy LP formulation
-* Eq. (23–26) implementation
-* Poisson coefficient matrix construction
-* Residual-tail handling
-* LP feasibility diagnostics
-* Photon-pair yield upper-bound estimation
-* Finite-decoy phase-error estimation
-* Finite vs infinite decoy comparison
-* CVXPY-based optimization pipeline
-* LP consistency validation framework
-
-Implemented diagnostics include:
-
-* LP upper-bound validation,
-* yield consistency checks,
-* finite ≤ infinite key-rate verification,
-* truncation-tail validation,
-* convergence diagnostics,
-* cutoff-range consistency analysis.
-
-Current LP framework supports:
-
-* arbitrary decoy-intensity sets,
-* configurable truncation parameter (`Mcut`),
-* batch yield estimation,
-* finite-decoy key-rate optimization.
-
----
-
-# Current Numerical Characteristics
-
-The framework currently uses:
-
-* asymptotic security assumptions,
-* explicit photon-number truncation,
-* parity-resolved cat-state expansions,
-* direct numerical evaluation of Eq. (35)-type expressions,
-* LP-based finite-decoy estimation,
-* scalar/grid alpha optimization,
-* dense parameter sweeps.
-
-The simulator becomes computationally expensive for:
-
-* large truncation parameters,
-* high-dimensional LP sweeps,
-* dense optimization grids,
-* high-loss asymptotic studies.
-
-Fast-analysis modes are therefore included for exploratory studies.
-
----
-
-# Validation Status
-
-The framework notebooks currently includes automated validation checks for:
-
-* Poisson normalization,
-* LP feasibility,
-* physical yield bounds,
-* finite-decoy consistency,
-* truncation-tail adequacy,
-* phase-error consistency,
-* entropy-function correctness,
-* numerical positivity constraints.
-
-The implementation is now internally physics-consistent for the
-implemented asymptotic and finite-decoy analyses.
-
----
-
-# Ongoing Work
-
-- Monte Carlo vs quadrature SKR comparison.
-- Relative error vs distance.
-- Optimal α vs distance.
-- Optimized average SKR vs fixed α.
-- Computational complexity and runtime comparison.
----
-
-# Planned Extensions
-
-## Free-Space Optical (FSO) Channels
-
-Current exploratory work includes early-stage implementation of:
-
-* atmospheric attenuation models,
-* turbulence-aware channel studies,
-* stochastic optical fading,
-* pointing-error analysis,
-* atmospheric-loss modeling,
-* log-normal turbulence,
-
-Planned future extensions include:
-
-* Gamma-Gamma turbulence,
-* scintillation studies,
-* adaptive optics,
-* aperture averaging,
-* beam-wander analysis.
-
----
-
-## Satellite Quantum Communication
-
-Planned future studies include:
-
-* uplink/downlink asymmetry,
-* orbital-loss modeling,
-* satellite pointing jitter,
-* dynamic atmospheric channels,
-* tracking and alignment analysis.
-
----
-
-## Advanced Numerical Studies
-
-Potential future work:
-
-* asymmetric TF-QKD,
-* finite-size effects,
-* detector-efficiency mismatch,
-* parameter-estimation analysis,
-* composable security extensions.
-
----
-
-# Repository Structure
-
-```text
-notebooks/
-│
-├── Phase1_Foundation_and_Channel_Model.ipynb
-├── Phase2_CatStates_and_PhaseError.ipynb
-├── Phase3_KeyRate_Optimization_and_Robustness.ipynb
-├── Phase4_Finite_Decoy_LP.ipynb
-├── Phase5_FSO_Channel_Modeling.ipynb
-├── tfqkd.py
-├── plots.py
+# tfqkd-fso-turbulence
+
+[![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+An open-source Python research framework for studying twin-field quantum key distribution (TF-QKD) over free-space optical (FSO) links under atmospheric turbulence.
+
+The project provides a unified interface for deterministic and stochastic channel models, numerical ergodic key-rate calculations, validation tools, and reproducible examples. In the twin-field configuration, Alice and Bob transmit over separate atmospheric links to Charlie; fading is modeled independently on each arm.
+
+> **Research software:** This repository is intended for simulation and research. Results depend on the assumptions and validity ranges of the selected physical models and are not a guarantee of real-world system performance.
+
+## Contents
+
+- [Features](#features)
+- [Quick start](#quick-start)
+- [Installation](#installation)
+- [Examples and validation](#examples-and-validation)
+- [Channel models](#channel-models)
+- [Example results](#example-results)
+- [Project layout](#project-layout)
+- [Contributing](#contributing)
+- [Citation](#citation)
+- [Acknowledgements](#acknowledgements)
+- [License](#license)
+
+## Features
+
+- Deterministic, Log-Normal, Gamma-Gamma, corrected Gamma-Gamma, and beam-broadening channel models.
+- A common `TurbulenceChannel` interface and `auto` model selection based on per-arm Rytov variance.
+- Ergodic secret-key-rate calculations through `TFQKDEngine`.
+- Numerical quadrature, Monte Carlo comparisons, analytical-formula validation, and plotting utilities.
+- Documentation of theory, model assumptions, validation, and the public API.
+
+The Curty–Azuma–Lo (2019) security-proof implementation and original Log-Normal baseline are retained in `src/legacy_baseline.py`. The modular engine and channel models interact with that baseline through `TFQKDEngine` and `TurbulenceChannel`.
+
+## Quick start
+
+The following example constructs a channel using automatic model selection and evaluates its ergodic key rate:
+
+```python
+import numpy as np
+
+from src.tfqkd_engine import TFQKDEngine
+from src.turbulence import create_channel
+
+engine = TFQKDEngine(
+    pd=1e-7,
+    thetaA=np.arcsin(np.sqrt(0.02)),
+    thetaB=-np.arcsin(np.sqrt(0.02)),
+    Nmax=4,
+)
+
+channel = create_channel(
+    "auto",
+    eta_nominal=0.05,
+    Cn2=1e-15,
+    wavelength=1550e-9,
+    distance_m=6000,
+    receiver_radius=0.15,
+    jitter_std=1e-6,
+    beam_wander_std=5e-7,
+)
+
+rate = engine.ergodic_key_rate(channel, alpha=0.20, method="quadrature")
+print(f"Ergodic key rate: {rate:.6e} bits/pulse")
 ```
 
----
+For a complete model comparison, including channel statistics and a generated figure, see [`examples/example_01_model_comparison.py`](examples/example_01_model_comparison.py).
 
-# Important Note
+## Installation
 
-This repository is still an actively developing research-oriented
-implementation intended for:
+Requirements: Python 3.9 or later.
 
-* conceptual understanding,
-* numerical experimentation,
-* protocol exploration,
-* reproducibility studies.
+Clone the repository and install the project with its runtime dependencies:
 
-Although major physical inconsistencies and LP-structure issues have
-been resolved, the framework should not yet be treated as a fully
-validated production-grade TF-QKD simulator.
-
-Some finite-decoy regimes remain conservative due to LP looseness and
-limited decoy configurations.
-
----
-
-# Tools and Libraries
-
-Primary libraries:
-
-* Python
-* NumPy
-* SciPy
-* Matplotlib
-* CVXPY
-* Jupyter Notebook
-
----
-
-# References
-
-Primary references:
-
-* Marcos Curty, Koji Azuma, and Hoi-Kwong Lo
-  *Simple security proof of twin-field type quantum key distribution protocol* (2018)
-
-* Lucamarini et al.
-  *Overcoming the rate–distance limit of quantum key distribution without quantum repeaters*
-  Nature (2018)
-
----
-
-# Research Watermark
-
-```text
-────────────────────────────────────────────────────────────
-TF-QKD / FSO Quantum Communication Research Framework
-Developed by Anand Kumar
-
-B.Tech Electronics and Communication Engineering
-Guru Gobind Singh Indraprastha University (GGSIPU)
-
-Research Areas:
-Quantum Communication • TF-QKD • FSO Systems
-Satellite Quantum Communication • Atmospheric Channels
-
-© Anand Kumar — Numerical Research Framework
-────────────────────────────────────────────────────────────
+```bash
+git clone https://github.com/Anand-Ambastha/tfqkd-fso-turbulence.git
+cd tfqkd-fso-turbulence
+python -m pip install -e .
 ```
 
----
+To install the test dependencies as well:
 
-# Author
+```bash
+python -m pip install -e ".[dev]"
+```
 
-## Anand Kumar
+The scripts in `paper_analysis/` additionally use pandas (`python -m pip install -e ".[analysis]"`).
 
-B.Tech - Electronics and Communication Engineering (Batch'28),
-Guru Gobind Singh Indraprastha University (GGSIPU), New Delhi
+Alternatively, install the dependencies from `requirements.txt`:
 
-Research Interests:
+```bash
+python -m pip install -r requirements.txt
+```
 
-* Quantum Communication
-* Quantum Key Distribution (QKD)
-* Free-Space Optical (FSO) Communication
-* Atmospheric Channel Modeling
-* Satellite Quantum Communication
-* Quantum Networks
+## Examples and validation
 
-Email: [anandambastha72@gmail.com](mailto:anandambastha72@gmail.com)
+Run any example from the repository root. For instance:
 
-GitHub: https://github.com/Anand-Ambastha
+```bash
+python examples/example_01_model_comparison.py
+```
 
-LinkedIn: https://www.linkedin.com/in/anand-kumar05
+The seven scripts in `examples/` cover model comparison, adaptive parameters, distance sweeps, model validity, and beam broadening. See [`examples/`](examples/) for the full list.
+
+Run the automated test suite with:
+
+```bash
+python -m pytest
+```
+
+To validate the closed-form turbulence-averaging formulas used in the associated manuscript and progress report:
+
+```bash
+python analytical_validation/run_all.py
+```
+
+This workflow compares Log-Normal and Gamma-Gamma formulations with numerical quadrature, Monte Carlo simulations, and a high-precision derivative-based reference. Additional information is in [`analytical_validation/README.md`](analytical_validation/README.md).
+
+## Channel models
+
+| Model | Intended use |
+|---|---|
+| Deterministic | Reference channel without atmospheric turbulence |
+| Log-Normal | Weak turbulence; use when the per-link Rytov variance is below one |
+| Gamma-Gamma | Moderate-to-strong turbulence |
+| Corrected Gamma-Gamma | Finite receiver aperture, aperture averaging, beam wander, and pointing error |
+| Beam-broadening variants | Models that include long-term beam broadening and associated mean-power loss |
+
+The `auto` option selects a model based on the Rytov variance of an individual arm. A model can also be selected explicitly. See the theory and model documentation in [`docs/`](docs/), including [THEORY.md](docs/THEORY.md), [GAMMA_GAMMA.md](docs/GAMMA_GAMMA.md), [CORRECTED_GAMMA_GAMMA.md](docs/CORRECTED_GAMMA_GAMMA.md), [TWO_LINK_FADING.md](docs/TWO_LINK_FADING.md), and [BEAM_BROADENING.md](docs/BEAM_BROADENING.md).
+
+## Example results
+
+The table shows the simulated maximum total Alice–Bob distance at which the ergodic secret key rate remains above \(10^{-9}\) bits per pulse. These are outputs for the parameter set below, not universal performance figures.
+
+Parameters: wavelength 1550 nm, beam waist 5 cm, receiver radius 15 cm, and attenuation 0.2 dB/km. The weak, moderate, and strong cases use mean \(C_n^2\) values of \(10^{-17}\), \(10^{-15}\), and \(10^{-13}\,\mathrm{m}^{-2/3}\), respectively.
+
+| Model | Weak | Moderate | Strong |
+|---|---:|---:|---:|
+| No turbulence | 248.8 km | 248.8 km | 248.8 km |
+| Gamma-Gamma, per arm | 288.7 km | 290.3 km | 288.8 km |
+| Log-Normal, per arm | 314.5 km | 132.6 km | 13.1 km |
+| Gamma-Gamma with beam broadening, per arm | 285.0 km | 196.4 km | 80.5 km |
+
+Interpret these results within each model's validity range. The Log-Normal approximation is intended for per-link Rytov variance no greater than one; its predictions can diverge from Gamma-Gamma outside that regime. In these simulations, standard Gamma-Gamma range changes little with the specified turbulence strength and can exceed the deterministic baseline near the rate cutoff because high-transmission fading events contribute to the average. Beam broadening adds mean-power loss and reduces the predicted range as turbulence increases. Model assumptions and limitations are described in [BEAM_BROADENING.md](docs/BEAM_BROADENING.md).
+
+## Project layout
+
+- `src/` — TF-QKD engine, channel models, numerical methods, statistics, and plotting utilities.
+- `tests/` — automated tests for numerical and physical model behavior.
+- `examples/` — runnable examples and figure-generation scripts.
+- `analytical_validation/` — independent checks of analytical averaging formulas.
+- `docs/` — theory, derivations, API reference, validation notes, performance documentation, and the finite-decoy (`FINITE_DECOY.md`) and ablation (`ABLATION.md`) notes.
+- `results/` — figures, text reports, and run logs written by the examples (regenerated with the current code).
+- `paper_analysis/` — scripts, tables, figures and LaTeX sources that support the manuscript, plus the ablation study.
+
+## Limitations
+
+- Inner and outer turbulence scales are included as a first-order correction to Rytov variance, rather than through a full von Kármán integral.
+- The spherical-wave Gamma-Gamma formulation uses \(\Theta=1\), rather than a general Gaussian-beam treatment.
+- The beam-broadening model is based on weak-to-moderate turbulence theory and does not saturate at high \(C_n^2\); it may overestimate losses under strong turbulence.
+- Near the outage threshold, rare high-transmission events can make Monte Carlo estimates noisy. Typical validation points show agreement between Monte Carlo and quadrature within 0.1%; near-threshold discrepancies of approximately 1–3% have been observed with \(10^6\) to \(10^7\) samples.
+
+See [`docs/VALIDATION.md`](docs/VALIDATION.md) for the validation methodology. Recheck numerical integration and distribution changes against Monte Carlo and independent quadrature.
+
+## Contributing
+
+Contributions, bug reports, and scientific corrections are welcome. Before opening a pull request:
+
+1. Install development dependencies and run `python -m pytest`.
+2. For a new turbulence model, include its channel implementation, factory entry, tests (including PDF/CDF, moments, and numerical agreement), and a derivation in `docs/`.
+3. Cross-check changes to quadrature or a model's PDF/CDF against Monte Carlo as described in [`docs/VALIDATION.md`](docs/VALIDATION.md).
+4. Add a relevant entry to `CHANGELOG.md`.
+5. Regenerate `results/` with the examples if your change affects their output, and record the code version in `CHANGELOG.md`.
+
+The validated baseline in `src/legacy_baseline.py` is intentionally retained. Please see [`CONTRIBUTING.md`](CONTRIBUTING.md) for project-specific development guidance and [`CODE_OF_CONDUCT.md`](CODE_OF_CONDUCT.md) for community expectations. The documentation index is [`docs/README.md`](docs/README.md).
+
+## Citation
+
+If you use this software, please cite the project using [`CITATION.cff`](CITATION.cff), and cite the underlying methods relevant to your work. Key references include:
+
+1. Curty, M., Azuma, K., and Lo, H.-K. “Simple security proof of twin-field type QKD protocol.” *npj Quantum Information* 5, 64 (2019). [arXiv:1807.07667](https://arxiv.org/abs/1807.07667).
+2. Andrews, L. C., and Phillips, R. L. *Laser Beam Propagation through Random Media*. 2nd ed., SPIE Press, 2005.
+3. Al-Habash, M. A., Andrews, L. C., and Phillips, R. L. “Mathematical model for the irradiance probability density function of a laser beam propagating through turbulent media.” *Optical Engineering* 40(8), 1554–1562 (2001).
+4. Farid, A. A., and Hranilovic, S. “Outage Capacity Optimization for Free-Space Optical Links with Pointing Errors.” *Journal of Lightwave Technology* 25(7), 1702–1710 (2007).
+5. Goodman, J. W. *Statistical Optics*. Wiley, 1985/2015.
+6. Korotkova, O. *Random Light Beams: Theory and Applications*. CRC Press, 2013.
+
+## Acknowledgements
+
+This work was carried out by Anand Kumar during a research internship at the Centre for Applied Research in Electronics (CARE), IIT Delhi, from June to December 2026, under the supervision of Dr. Neelkanth Kundu and Dr. Ramniwas Meena. The author acknowledges the support of the National Quantum Mission and the Samngya Foundation.
+
+## License
+
+This project is distributed under the [MIT License](LICENSE). Copyright © 2026 Anand Kumar.

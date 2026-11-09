@@ -1,0 +1,181 @@
+variant,group,cls,L_km,R,R_ref,rel_change_pct
+Reference,ref,weak,100,0.00038350956769710534,0.00038350956769710534,0.0
+No beam broadening,channel,weak,100,0.00039536400964773025,0.00038350956769710534,3.0910420362674014
+"No fading, beam-broadening loss kept",channel,weak,100,0.0004065887576248874,0.00038350956769710534,6.017891565617977
+No turbulence (deterministic),channel,weak,100,0.0004191413822513467,0.00038350956769710534,9.290984516554039
+Log-normal fading,channel,weak,100,0.0003808969519020848,0.00038350956769710534,-0.6812387525841258
+One link at full length,channel,weak,100,0.0003775868305267735,0.00038350956769710534,-1.5443518673853767
+Perfectly correlated arms,channel,weak,100,0.0004084544685625345,0.00038350956769710534,6.504375109913968
+No CSI (averaged statistics),receiver,weak,100,0.00038311374494033064,0.00038350956769710534,-0.10321066020634863
+Fixed alpha = 0.2,receiver,weak,100,0.00038284339983911804,0.00038350956769710534,-0.17370306091383791
+Per-shot optimal alpha (oracle),receiver,weak,100,0.000383609350217518,0.00038350956769710534,0.026018261033702778
+"Finite decoy (3 intensities, LP)",security,weak,100,0.00031723485649552354,0.00038350956769710534,-17.28111024701354
+Residual before v2.4.1,security,weak,100,0.00038523198804181187,0.00038350956769710534,0.4491205669389962
+Nmax = 2,security,weak,100,0.00030032844845393446,0.00038350956769710534,-21.68945086367886
+Nmax = 6,security,weak,100,0.0003855373210118213,0.00038350956769710534,0.5287360435079155
+Nmax = 8,security,weak,100,0.0003855596246029521,0.00038350956769710534,0.5345516979294466
+Reference,ref,weak,150,4.649168170122661e-05,4.649168170122661e-05,0.0
+No beam broadening,channel,weak,150,4.9123153242731496e-05,4.649168170122661e-05,5.6600911070839155
+"No fading, beam-broadening loss kept",channel,weak,150,5.19336515977023e-05,4.649168170122661e-05,11.70525499905097
+No turbulence (deterministic),channel,weak,150,5.4862162496824615e-05,4.649168170122661e-05,18.00425471676832
+Log-normal fading,channel,weak,150,4.496058956853577e-05,4.649168170122661e-05,-3.2932603783408436
+One link at full length,channel,weak,150,4.661683926636908e-05,4.649168170122661e-05,0.2692042115120274
+Perfectly correlated arms,channel,weak,150,5.248716245626864e-05,4.649168170122661e-05,12.89581390832728
+No CSI (averaged statistics),receiver,weak,150,4.622951042757396e-05,4.649168170122661e-05,-0.563910067477149
+Fixed alpha = 0.2,receiver,weak,150,4.603947487748248e-05,4.649168170122661e-05,-0.9726617906622134
+Per-shot optimal alpha (oracle),receiver,weak,150,4.6514197003071376e-05,4.649168170122661e-05,0.04842866728172936
+"Finite decoy (3 intensities, LP)",security,weak,150,3.421663628292317e-05,4.649168170122661e-05,-26.40267026085997
+Residual before v2.4.1,security,weak,150,4.7020235989359416e-05,4.649168170122661e-05,1.1368792626807942
+Nmax = 2,security,weak,150,2.7527593744659456e-05,4.649168170122661e-05,-40.790281750696096
+Nmax = 6,security,weak,150,4.721926661900174e-05,4.649168170122661e-05,1.5649787040418808
+Nmax = 8,security,weak,150,4.722748173589895e-05,4.649168170122661e-05,1.58264878306806
+Reference,ref,weak,200,5.40151491962896e-06,5.40151491962896e-06,0.0
+No beam broadening,channel,weak,200,5.960720490741638e-06,5.40151491962896e-06,10.352754355644558
+"No fading, beam-broadening loss kept",channel,weak,200,6.4498841345683965e-06,5.40151491962896e-06,19.40879976337176
+No turbulence (deterministic),channel,weak,200,7.1054077240070975e-06,5.40151491962896e-06,31.544720874253933
+Log-normal fading,channel,weak,200,4.865273039316107e-06,5.40151491962896e-06,-9.927620089767133
+One link at full length,channel,weak,200,5.606684866201556e-06,5.40151491962896e-06,3.798377855571837
+Perfectly correlated arms,channel,weak,200,6.778310837828696e-06,5.40151491962896e-06,25.48906998657906
+No CSI (averaged statistics),receiver,weak,200,5.2417095089322406e-06,5.40151491962896e-06,-2.95852946950107
+Fixed alpha = 0.2,receiver,weak,200,5.130160892741108e-06,5.40151491962896e-06,-5.0236652295777136
+Per-shot optimal alpha (oracle),receiver,weak,200,5.4141016192863425e-06,5.40151491962896e-06,0.2330216586395486
+"Finite decoy (3 intensities, LP)",security,weak,200,2.9194993637194068e-06,5.40151491962896e-06,-45.950360090462326
+Residual before v2.4.1,security,weak,200,5.555377471937977e-06,5.40151491962896e-06,2.8485074020601866
+Nmax = 2,security,weak,200,1.8281022614994083e-06,5.40151491962896e-06,-66.15574910556789
+Nmax = 6,security,weak,200,5.625121269054734e-06,5.40151491962896e-06,4.139696969329738
+Nmax = 8,security,weak,200,5.6276836145638e-06,5.40151491962896e-06,4.18713450393238
+Reference,ref,weak,250,2.1456703595196854e-07,2.1456703595196854e-07,0.0
+No beam broadening,channel,weak,250,2.801357012933505e-07,2.1456703595196854e-07,30.558592120394337
+"No fading, beam-broadening loss kept",channel,weak,250,4.4462200092300024e-08,2.1456703595196854e-07,-79.2781776124022
+No turbulence (deterministic),channel,weak,250,1.6033151660064753e-07,2.1456703595196854e-07,-25.276724875605677
+Log-normal fading,channel,weak,250,2.2403385668643948e-07,2.1456703595196854e-07,4.412057375201903
+One link at full length,channel,weak,250,1.9879470983456974e-07,2.1456703595196854e-07,-7.350768512703639
+Perfectly correlated arms,channel,weak,250,4.839270358786699e-07,2.1456703595196854e-07,125.53652462580429
+No CSI (averaged statistics),receiver,weak,250,0.0,2.1456703595196854e-07,-100.0
+Fixed alpha = 0.2,receiver,weak,250,1.5562015330331703e-07,2.1456703595196854e-07,-27.472478420146018
+Per-shot optimal alpha (oracle),receiver,weak,250,2.1599585973307005e-07,2.1456703595196854e-07,0.6659102013327726
+"Finite decoy (3 intensities, LP)",security,weak,250,3.701029662797968e-08,2.1456703595196854e-07,-82.75117309433098
+Residual before v2.4.1,security,weak,250,2.3310081186986082e-07,2.1456703595196854e-07,8.63775548544238
+Nmax = 2,security,weak,250,1.0425353486524645e-08,2.1456703595196854e-07,-95.14121382146585
+Nmax = 6,security,weak,250,2.421288748778856e-07,2.1456703595196854e-07,12.845327710117997
+Nmax = 8,security,weak,250,2.424430886758939e-07,2.1456703595196854e-07,12.9917685632594
+Reference,ref,moderate,100,3.225833739229468e-05,3.225833739229468e-05,0.0
+No beam broadening,channel,moderate,100,0.00032120017451733776,3.225833739229468e-05,895.7121181144959
+"No fading, beam-broadening loss kept",channel,moderate,100,4.2674586966786975e-05,3.225833739229468e-05,32.290100533762626
+No turbulence (deterministic),channel,moderate,100,0.0004191413822513467,3.225833739229468e-05,1199.3272937602296
+Log-normal fading,channel,moderate,100,3.199754493313528e-08,3.225833739229468e-05,-99.90080844978458
+One link at full length,channel,moderate,100,3.72398950205848e-05,3.225833739229468e-05,15.4426980154285
+Perfectly correlated arms,channel,moderate,100,4.391491838364252e-05,3.225833739229468e-05,36.135095400583666
+No CSI (averaged statistics),receiver,moderate,100,3.1619001137001175e-05,3.225833739229468e-05,-1.9819256259816382
+Fixed alpha = 0.2,receiver,moderate,100,3.188386607454576e-05,3.225833739229468e-05,-1.1608512651937506
+Per-shot optimal alpha (oracle),receiver,moderate,100,3.2294772061130955e-05,3.225833739229468e-05,0.11294651795965728
+"Finite decoy (3 intensities, LP)",security,moderate,100,2.3215528420963457e-05,3.225833739229468e-05,-28.032470679940296
+Residual before v2.4.1,security,moderate,100,3.2668195177336424e-05,3.225833739229468e-05,1.2705483858558781
+Nmax = 2,security,moderate,100,1.8331180315488253e-05,3.225833739229468e-05,-43.173821723785146
+Nmax = 6,security,moderate,100,3.282740690962259e-05,3.225833739229468e-05,1.764100580905448
+Nmax = 8,security,moderate,100,3.2833854680445885e-05,3.225833739229468e-05,1.7840885013766217
+Reference,ref,moderate,150,1.254289854628169e-06,1.254289854628169e-06,0.0
+No beam broadening,channel,moderate,150,4.1721541336568686e-05,1.254289854628169e-06,3226.3078053786007
+"No fading, beam-broadening loss kept",channel,moderate,150,1.6368841964267934e-06,1.254289854628169e-06,30.502865058415352
+No turbulence (deterministic),channel,moderate,150,5.4862162496824615e-05,1.254289854628169e-06,4273.962070600368
+Log-normal fading,channel,moderate,150,1.1119401862849815e-12,1.254289854628169e-06,-99.99991134902494
+One link at full length,channel,moderate,150,1.4206852440298309e-06,1.254289854628169e-06,13.266103427982312
+Perfectly correlated arms,channel,moderate,150,2.167012871118801e-06,1.254289854628169e-06,72.76810962974793
+No CSI (averaged statistics),receiver,moderate,150,9.015161218842139e-07,1.254289854628169e-06,-28.125375601362414
+Fixed alpha = 0.2,receiver,moderate,150,1.1140994200436263e-06,1.254289854628169e-06,-11.176877024657255
+Per-shot optimal alpha (oracle),receiver,moderate,150,1.2607989138846313e-06,1.254289854628169e-06,0.5189437857959792
+"Finite decoy (3 intensities, LP)",security,moderate,150,4.9533479883716e-07,1.254289854628169e-06,-60.508745485787195
+Residual before v2.4.1,security,moderate,150,1.3115229825179719e-06,1.254289854628169e-06,4.562990578184138
+Nmax = 2,security,moderate,150,2.521377945978874e-07,1.254289854628169e-06,-79.89796428094103
+Nmax = 6,security,moderate,150,1.338470089675282e-06,1.254289854628169e-06,6.711386107166434
+Nmax = 8,security,moderate,150,1.3394338131274543e-06,1.254289854628169e-06,6.78822029733518
+Reference,ref,moderate,200,9.563370966003414e-10,9.563370966003414e-10,0.0
+No beam broadening,channel,moderate,200,5.290058543721433e-06,9.563370966003414e-10,553058.3541542965
+"No fading, beam-broadening loss kept",channel,moderate,200,0.0,9.563370966003414e-10,-100.0
+No turbulence (deterministic),channel,moderate,200,7.1054077240070975e-06,9.563370966003414e-10,742881.5019479985
+Log-normal fading,channel,moderate,200,5.884749943456211e-18,9.563370966003414e-10,-99.99999938465736
+One link at full length,channel,moderate,200,1.6356766273779162e-13,9.563370966003414e-10,-99.9828964427586
+Perfectly correlated arms,channel,moderate,200,1.5423935442171546e-08,9.563370966003414e-10,1512.8136717692648
+No CSI (averaged statistics),receiver,moderate,200,0.0,9.563370966003414e-10,-100.0
+Fixed alpha = 0.2,receiver,moderate,200,3.614238679930669e-10,9.563370966003414e-10,-62.20748214433137
+Per-shot optimal alpha (oracle),receiver,moderate,200,9.666201362603499e-10,9.563370966003414e-10,1.0752526171538683
+"Finite decoy (3 intensities, LP)",security,moderate,200,1.3691806958670292e-11,9.563370966003414e-10,-98.56830745065281
+Residual before v2.4.1,security,moderate,200,1.1610026326634146e-09,9.563370966003414e-10,21.400982644156915
+Nmax = 2,security,moderate,200,5.431001899999602e-13,9.563370966003414e-10,-99.94321038136755
+Nmax = 6,security,moderate,200,1.2684732387991778e-09,9.563370966003414e-10,32.638715292802225
+Nmax = 8,security,moderate,200,1.2721890593463791e-09,9.563370966003414e-10,33.027262444262796
+Reference,ref,moderate,250,0.0,0.0,nan
+No beam broadening,channel,moderate,250,2.993554019222743e-07,0.0,nan
+"No fading, beam-broadening loss kept",channel,moderate,250,0.0,0.0,nan
+No turbulence (deterministic),channel,moderate,250,1.6033151660064753e-07,0.0,nan
+Log-normal fading,channel,moderate,250,4.7534085153799705e-24,0.0,nan
+One link at full length,channel,moderate,250,0.0,0.0,nan
+Perfectly correlated arms,channel,moderate,250,0.0,0.0,nan
+No CSI (averaged statistics),receiver,moderate,250,0.0,0.0,nan
+Fixed alpha = 0.2,receiver,moderate,250,0.0,0.0,nan
+Per-shot optimal alpha (oracle),receiver,moderate,250,0.0,0.0,nan
+"Finite decoy (3 intensities, LP)",security,moderate,250,0.0,0.0,nan
+Residual before v2.4.1,security,moderate,250,0.0,0.0,nan
+Nmax = 2,security,moderate,250,0.0,0.0,nan
+Nmax = 6,security,moderate,250,0.0,0.0,nan
+Nmax = 8,security,moderate,250,0.0,0.0,nan
+Reference,ref,strong,100,2.717405089548308e-16,2.717405089548308e-16,nan
+No beam broadening,channel,strong,100,0.00032723958487635416,2.717405089548308e-16,nan
+"No fading, beam-broadening loss kept",channel,strong,100,0.0,2.717405089548308e-16,nan
+No turbulence (deterministic),channel,strong,100,0.0004191413822513467,2.717405089548308e-16,nan
+Log-normal fading,channel,strong,100,0.0,2.717405089548308e-16,nan
+One link at full length,channel,strong,100,0.0,2.717405089548308e-16,nan
+Perfectly correlated arms,channel,strong,100,4.846252606598219e-12,2.717405089548308e-16,nan
+No CSI (averaged statistics),receiver,strong,100,0.0,2.717405089548308e-16,nan
+Fixed alpha = 0.2,receiver,strong,100,0.0,2.717405089548308e-16,nan
+Per-shot optimal alpha (oracle),receiver,strong,100,3.229595842170765e-16,2.717405089548308e-16,nan
+"Finite decoy (3 intensities, LP)",security,strong,100,0.0,2.717405089548308e-16,nan
+Residual before v2.4.1,security,strong,100,6.919002258184942e-16,2.717405089548308e-16,nan
+Nmax = 2,security,strong,100,0.0,2.717405089548308e-16,nan
+Nmax = 6,security,strong,100,1.4773742349218458e-15,2.717405089548308e-16,nan
+Nmax = 8,security,strong,100,1.5201884806323783e-15,2.717405089548308e-16,nan
+Reference,ref,strong,150,0.0,0.0,nan
+No beam broadening,channel,strong,150,4.244154931660256e-05,0.0,nan
+"No fading, beam-broadening loss kept",channel,strong,150,0.0,0.0,nan
+No turbulence (deterministic),channel,strong,150,5.4862162496824615e-05,0.0,nan
+Log-normal fading,channel,strong,150,0.0,0.0,nan
+One link at full length,channel,strong,150,0.0,0.0,nan
+Perfectly correlated arms,channel,strong,150,0.0,0.0,nan
+No CSI (averaged statistics),receiver,strong,150,0.0,0.0,nan
+Fixed alpha = 0.2,receiver,strong,150,0.0,0.0,nan
+Per-shot optimal alpha (oracle),receiver,strong,150,0.0,0.0,nan
+"Finite decoy (3 intensities, LP)",security,strong,150,0.0,0.0,nan
+Residual before v2.4.1,security,strong,150,0.0,0.0,nan
+Nmax = 2,security,strong,150,0.0,0.0,nan
+Nmax = 6,security,strong,150,0.0,0.0,nan
+Nmax = 8,security,strong,150,0.0,0.0,nan
+Reference,ref,strong,200,0.0,0.0,nan
+No beam broadening,channel,strong,200,5.3773932476859605e-06,0.0,nan
+"No fading, beam-broadening loss kept",channel,strong,200,0.0,0.0,nan
+No turbulence (deterministic),channel,strong,200,7.1054077240070975e-06,0.0,nan
+Log-normal fading,channel,strong,200,0.0,0.0,nan
+One link at full length,channel,strong,200,0.0,0.0,nan
+Perfectly correlated arms,channel,strong,200,0.0,0.0,nan
+No CSI (averaged statistics),receiver,strong,200,0.0,0.0,nan
+Fixed alpha = 0.2,receiver,strong,200,0.0,0.0,nan
+Per-shot optimal alpha (oracle),receiver,strong,200,0.0,0.0,nan
+"Finite decoy (3 intensities, LP)",security,strong,200,0.0,0.0,nan
+Residual before v2.4.1,security,strong,200,0.0,0.0,nan
+Nmax = 2,security,strong,200,0.0,0.0,nan
+Nmax = 6,security,strong,200,0.0,0.0,nan
+Nmax = 8,security,strong,200,0.0,0.0,nan
+Reference,ref,strong,250,0.0,0.0,nan
+No beam broadening,channel,strong,250,2.9973353582678887e-07,0.0,nan
+"No fading, beam-broadening loss kept",channel,strong,250,0.0,0.0,nan
+No turbulence (deterministic),channel,strong,250,1.6033151660064753e-07,0.0,nan
+Log-normal fading,channel,strong,250,0.0,0.0,nan
+One link at full length,channel,strong,250,0.0,0.0,nan
+Perfectly correlated arms,channel,strong,250,0.0,0.0,nan
+No CSI (averaged statistics),receiver,strong,250,0.0,0.0,nan
+Fixed alpha = 0.2,receiver,strong,250,0.0,0.0,nan
+Per-shot optimal alpha (oracle),receiver,strong,250,0.0,0.0,nan
+"Finite decoy (3 intensities, LP)",security,strong,250,0.0,0.0,nan
+Residual before v2.4.1,security,strong,250,0.0,0.0,nan
+Nmax = 2,security,strong,250,0.0,0.0,nan
+Nmax = 6,security,strong,250,0.0,0.0,nan
+Nmax = 8,security,strong,250,0.0,0.0,nan

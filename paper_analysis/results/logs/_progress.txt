@@ -1,0 +1,8 @@
+paper_analysis/scripts/beam_wander_table.py exit 0 13s
+paper_analysis/scripts/ln_error_vs_distance.py exit 0 15s
+paper_analysis/scripts/ln_vs_gg_per_arm.py exit 0 3s
+paper_analysis/scripts/perarm_analytic_errors.py exit 0 2s
+paper_analysis/scripts/sensitivity_study.py exit 0 9s
+paper_analysis/scripts/sensitivity_thresholds.py exit 0 1s
+paper_analysis/scripts/sensitivity_figures.py exit 0 4s
+PAPERSCRIPTS_DONE

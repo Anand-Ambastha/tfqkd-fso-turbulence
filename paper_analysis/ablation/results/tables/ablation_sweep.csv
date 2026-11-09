@@ -1,0 +1,225 @@
+variant,cls,L_km,R
+Reference,moderate,10.0,0.032261752115507206
+Reference,moderate,20.0,0.015577702178152329
+Reference,moderate,30.0,0.0057482763253603455
+Reference,moderate,40.0,0.0022326784192404237
+Reference,moderate,50.0,0.0009499156203804603
+Reference,moderate,60.0,0.00043807308726732583
+Reference,moderate,70.0,0.00021555547933018335
+Reference,moderate,80.0,0.00011122431577806958
+Reference,moderate,90.0,5.929707868946682e-05
+Reference,moderate,100.0,3.225833739229468e-05
+Reference,moderate,110.0,1.76952760478435e-05
+Reference,moderate,120.0,9.660086532826024e-06
+Reference,moderate,130.0,5.162950514682643e-06
+Reference,moderate,140.0,2.6420483198650315e-06
+Reference,moderate,150.0,1.254289854628169e-06
+Reference,moderate,160.0,5.28061996525608e-07
+Reference,moderate,170.0,1.8504789956557423e-07
+Reference,moderate,180.0,4.95020984492113e-08
+Reference,moderate,190.0,9.009376757789183e-09
+Reference,moderate,200.0,9.563370966003414e-10
+Reference,moderate,210.0,4.7143594510447435e-11
+Reference,moderate,220.0,6.761616553824903e-13
+Reference,moderate,230.0,4.46488772362833e-16
+Reference,moderate,240.0,0.0
+Reference,moderate,250.0,0.0
+Reference,moderate,260.0,0.0
+Reference,moderate,270.0,0.0
+Reference,moderate,280.0,0.0
+Reference,moderate,290.0,0.0
+Reference,moderate,300.0,0.0
+Reference,moderate,310.0,0.0
+Reference,moderate,320.0,0.0
+No beam broadening,moderate,10.0,0.03229787474151901
+No beam broadening,moderate,20.0,0.01937571090380533
+No beam broadening,moderate,30.0,0.011734932266071722
+No beam broadening,moderate,40.0,0.006635319061907003
+No beam broadening,moderate,50.0,0.00370274649117149
+No beam broadening,moderate,60.0,0.002130103417222777
+No beam broadening,moderate,70.0,0.0012740217152346946
+No beam broadening,moderate,80.0,0.0007868963164629412
+No beam broadening,moderate,90.0,0.0004980626646648463
+No beam broadening,moderate,100.0,0.00032120017451733776
+No beam broadening,moderate,110.0,0.0002101383308126189
+No beam broadening,moderate,120.0,0.00013898387433296542
+No beam broadening,moderate,130.0,9.265494248770863e-05
+No beam broadening,moderate,140.0,6.209398368674301e-05
+No beam broadening,moderate,150.0,4.1721541336568686e-05
+No beam broadening,moderate,160.0,2.8028132943083222e-05
+No beam broadening,moderate,170.0,1.876662308734442e-05
+No beam broadening,moderate,180.0,1.2476746004246553e-05
+No beam broadening,moderate,190.0,8.197564000831763e-06
+No beam broadening,moderate,200.0,5.290058543721433e-06
+No beam broadening,moderate,210.0,3.325512642180793e-06
+No beam broadening,moderate,220.0,2.0140067844597082e-06
+No beam broadening,moderate,230.0,1.157558213754795e-06
+No beam broadening,moderate,240.0,6.187307933014689e-07
+No beam broadening,moderate,250.0,2.993554019222743e-07
+No beam broadening,moderate,260.0,1.2651848675343936e-07
+No beam broadening,moderate,270.0,4.4606171511023825e-08
+No beam broadening,moderate,280.0,1.2366283871428365e-08
+No beam broadening,moderate,290.0,2.49829930053993e-09
+No beam broadening,moderate,300.0,3.3189676753702805e-10
+No beam broadening,moderate,310.0,2.4729379339735445e-11
+No beam broadening,moderate,320.0,7.55865957874828e-13
+No turbulence (deterministic),moderate,10.0,0.04252134647696083
+No turbulence (deterministic),moderate,20.0,0.026734520854209045
+No turbulence (deterministic),moderate,30.0,0.015186151286325012
+No turbulence (deterministic),moderate,40.0,0.008291354015874513
+No turbulence (deterministic),moderate,50.0,0.004657264056653801
+No turbulence (deterministic),moderate,60.0,0.0027200289511376046
+No turbulence (deterministic),moderate,70.0,0.0016438392812317807
+No turbulence (deterministic),moderate,80.0,0.0010212722584054504
+No turbulence (deterministic),moderate,90.0,0.0006485843499540083
+No turbulence (deterministic),moderate,100.0,0.0004191413822513467
+No turbulence (deterministic),moderate,110.0,0.00027461668042135336
+No turbulence (deterministic),moderate,120.0,0.00018185765734106022
+No turbulence (deterministic),moderate,130.0,0.00012139698988148681
+No turbulence (deterministic),moderate,140.0,8.148481433094009e-05
+No turbulence (deterministic),moderate,150.0,5.4862162496824615e-05
+No turbulence (deterministic),moderate,160.0,3.6954592232584e-05
+No turbulence (deterministic),moderate,170.0,2.4829956988337105e-05
+No turbulence (deterministic),moderate,180.0,1.658108870159128e-05
+No turbulence (deterministic),moderate,190.0,1.0951747959652026e-05
+No turbulence (deterministic),moderate,200.0,7.1054077240070975e-06
+No turbulence (deterministic),moderate,210.0,4.47980922677641e-06
+No turbulence (deterministic),moderate,220.0,2.6940349233786823e-06
+No turbulence (deterministic),moderate,230.0,1.4883212449460305e-06
+No turbulence (deterministic),moderate,240.0,6.845937925641649e-07
+No turbulence (deterministic),moderate,250.0,1.6033151660064753e-07
+No turbulence (deterministic),moderate,260.0,0.0
+No turbulence (deterministic),moderate,270.0,0.0
+No turbulence (deterministic),moderate,280.0,0.0
+No turbulence (deterministic),moderate,290.0,0.0
+No turbulence (deterministic),moderate,300.0,0.0
+No turbulence (deterministic),moderate,310.0,0.0
+No turbulence (deterministic),moderate,320.0,0.0
+Log-normal fading,moderate,10.0,0.030543939733140738
+Log-normal fading,moderate,20.0,0.011447770386527372
+Log-normal fading,moderate,30.0,0.0028525317789108093
+Log-normal fading,moderate,40.0,0.0006644619472793009
+Log-normal fading,moderate,50.0,0.0001499312908243351
+Log-normal fading,moderate,60.0,3.221354138472989e-05
+Log-normal fading,moderate,70.0,6.438616253170521e-06
+Log-normal fading,moderate,80.0,1.1890657000844808e-06
+Log-normal fading,moderate,90.0,2.0272808882539066e-07
+Log-normal fading,moderate,100.0,3.199754493313528e-08
+Log-normal fading,moderate,110.0,4.692734940552699e-09
+Log-normal fading,moderate,120.0,6.480080683177779e-10
+Log-normal fading,moderate,130.0,8.295338834892432e-11
+Log-normal fading,moderate,140.0,1.0026778289503183e-11
+Log-normal fading,moderate,150.0,1.1119401862849815e-12
+Log-normal fading,moderate,160.0,1.1094399194177199e-13
+Log-normal fading,moderate,170.0,1.0378061906754454e-14
+Log-normal fading,moderate,180.0,9.08534483440444e-16
+Log-normal fading,moderate,190.0,7.4987074889676e-17
+Log-normal fading,moderate,200.0,5.884749943456211e-18
+Log-normal fading,moderate,210.0,4.366939280036048e-19
+Log-normal fading,moderate,220.0,2.6566983809870993e-20
+Log-normal fading,moderate,230.0,1.4897139918957028e-21
+Log-normal fading,moderate,240.0,8.5819525467851e-23
+Log-normal fading,moderate,250.0,4.7534085153799705e-24
+Log-normal fading,moderate,260.0,2.487463097916313e-25
+Log-normal fading,moderate,270.0,1.0147580062701745e-26
+Log-normal fading,moderate,280.0,3.7817163083715896e-28
+Log-normal fading,moderate,290.0,1.5090893702931877e-29
+Log-normal fading,moderate,300.0,5.692236054607304e-31
+Log-normal fading,moderate,310.0,2.025759264245563e-32
+Log-normal fading,moderate,320.0,5.444496655780605e-34
+No CSI (averaged statistics),moderate,10.0,0.03172038422328953
+No CSI (averaged statistics),moderate,20.0,0.015367635121339715
+No CSI (averaged statistics),moderate,30.0,0.005720360070555877
+No CSI (averaged statistics),moderate,40.0,0.002226053687128198
+No CSI (averaged statistics),moderate,50.0,0.0009465860211263353
+No CSI (averaged statistics),moderate,60.0,0.0004358795626630578
+No CSI (averaged statistics),moderate,70.0,0.00021400586510655374
+No CSI (averaged statistics),moderate,80.0,0.00011009574240811516
+No CSI (averaged statistics),moderate,90.0,5.8456805759107125e-05
+No CSI (averaged statistics),moderate,100.0,3.1619001137001175e-05
+No CSI (averaged statistics),moderate,110.0,1.719548163363609e-05
+No CSI (averaged statistics),moderate,120.0,9.25311646350914e-06
+No CSI (averaged statistics),moderate,130.0,4.809492564632366e-06
+No CSI (averaged statistics),moderate,140.0,2.3058947392939982e-06
+No CSI (averaged statistics),moderate,150.0,9.015161218842139e-07
+No CSI (averaged statistics),moderate,160.0,1.312811344422452e-07
+No CSI (averaged statistics),moderate,170.0,0.0
+No CSI (averaged statistics),moderate,180.0,0.0
+No CSI (averaged statistics),moderate,190.0,0.0
+No CSI (averaged statistics),moderate,200.0,0.0
+No CSI (averaged statistics),moderate,210.0,0.0
+No CSI (averaged statistics),moderate,220.0,0.0
+No CSI (averaged statistics),moderate,230.0,0.0
+No CSI (averaged statistics),moderate,240.0,0.0
+No CSI (averaged statistics),moderate,250.0,0.0
+No CSI (averaged statistics),moderate,260.0,0.0
+No CSI (averaged statistics),moderate,270.0,0.0
+No CSI (averaged statistics),moderate,280.0,0.0
+No CSI (averaged statistics),moderate,290.0,0.0
+No CSI (averaged statistics),moderate,300.0,0.0
+No CSI (averaged statistics),moderate,310.0,0.0
+No CSI (averaged statistics),moderate,320.0,0.0
+Fixed alpha = 0.2,moderate,10.0,0.026731380017632013
+Fixed alpha = 0.2,moderate,20.0,0.014343606492882554
+Fixed alpha = 0.2,moderate,30.0,0.005653828554730669
+Fixed alpha = 0.2,moderate,40.0,0.002229034182119726
+Fixed alpha = 0.2,moderate,50.0,0.0009498912604083809
+Fixed alpha = 0.2,moderate,60.0,0.0004376499746021482
+Fixed alpha = 0.2,moderate,70.0,0.00021502333709868447
+Fixed alpha = 0.2,moderate,80.0,0.0001107276810636162
+Fixed alpha = 0.2,moderate,90.0,5.886333973470308e-05
+Fixed alpha = 0.2,moderate,100.0,3.188386607454576e-05
+Fixed alpha = 0.2,moderate,110.0,1.737197716615323e-05
+Fixed alpha = 0.2,moderate,120.0,9.382196255228778e-06
+Fixed alpha = 0.2,moderate,130.0,4.928564004307406e-06
+Fixed alpha = 0.2,moderate,140.0,2.4529740147513593e-06
+Fixed alpha = 0.2,moderate,150.0,1.1140994200436263e-06
+Fixed alpha = 0.2,moderate,160.0,4.377742772797204e-07
+Fixed alpha = 0.2,moderate,170.0,1.382097912261816e-07
+Fixed alpha = 0.2,moderate,180.0,3.173241009959704e-08
+Fixed alpha = 0.2,moderate,190.0,4.643785780781573e-09
+Fixed alpha = 0.2,moderate,200.0,3.614238679930669e-10
+Fixed alpha = 0.2,moderate,210.0,1.1106512639315795e-11
+Fixed alpha = 0.2,moderate,220.0,6.024375153494523e-14
+Fixed alpha = 0.2,moderate,230.0,0.0
+Fixed alpha = 0.2,moderate,240.0,0.0
+Fixed alpha = 0.2,moderate,250.0,0.0
+Fixed alpha = 0.2,moderate,260.0,0.0
+Fixed alpha = 0.2,moderate,270.0,0.0
+Fixed alpha = 0.2,moderate,280.0,0.0
+Fixed alpha = 0.2,moderate,290.0,0.0
+Fixed alpha = 0.2,moderate,300.0,0.0
+Fixed alpha = 0.2,moderate,310.0,0.0
+Fixed alpha = 0.2,moderate,320.0,0.0
+"Finite decoy (3 intensities, LP)",moderate,10.0,0.030213235020424965
+"Finite decoy (3 intensities, LP)",moderate,20.0,0.014626954918362885
+"Finite decoy (3 intensities, LP)",moderate,30.0,0.005336545231944221
+"Finite decoy (3 intensities, LP)",moderate,40.0,0.0020192424010592163
+"Finite decoy (3 intensities, LP)",moderate,50.0,0.0008295731710072054
+"Finite decoy (3 intensities, LP)",moderate,60.0,0.00036872035958109066
+"Finite decoy (3 intensities, LP)",moderate,70.0,0.0001754089036002031
+"Finite decoy (3 intensities, LP)",moderate,80.0,8.751545146420114e-05
+"Finite decoy (3 intensities, LP)",moderate,90.0,4.483985967234134e-05
+"Finite decoy (3 intensities, LP)",moderate,100.0,2.3215528420963457e-05
+"Finite decoy (3 intensities, LP)",moderate,110.0,1.1963499404744139e-05
+"Finite decoy (3 intensities, LP)",moderate,120.0,6.02606583287594e-06
+"Finite decoy (3 intensities, LP)",moderate,130.0,2.8949903595906497e-06
+"Finite decoy (3 intensities, LP)",moderate,140.0,1.2804831420367812e-06
+"Finite decoy (3 intensities, LP)",moderate,150.0,4.9533479883716e-07
+"Finite decoy (3 intensities, LP)",moderate,160.0,1.5576223480555985e-07
+"Finite decoy (3 intensities, LP)",moderate,170.0,3.60171641658565e-08
+"Finite decoy (3 intensities, LP)",moderate,180.0,5.358797198487026e-09
+"Finite decoy (3 intensities, LP)",moderate,190.0,4.2771288488250897e-10
+"Finite decoy (3 intensities, LP)",moderate,200.0,1.3691806958670292e-11
+"Finite decoy (3 intensities, LP)",moderate,210.0,8.735586168818532e-14
+"Finite decoy (3 intensities, LP)",moderate,220.0,0.0
+"Finite decoy (3 intensities, LP)",moderate,230.0,0.0
+"Finite decoy (3 intensities, LP)",moderate,240.0,0.0
+"Finite decoy (3 intensities, LP)",moderate,250.0,0.0
+"Finite decoy (3 intensities, LP)",moderate,260.0,0.0
+"Finite decoy (3 intensities, LP)",moderate,270.0,0.0
+"Finite decoy (3 intensities, LP)",moderate,280.0,0.0
+"Finite decoy (3 intensities, LP)",moderate,290.0,0.0
+"Finite decoy (3 intensities, LP)",moderate,300.0,0.0
+"Finite decoy (3 intensities, LP)",moderate,310.0,0.0
+"Finite decoy (3 intensities, LP)",moderate,320.0,0.0

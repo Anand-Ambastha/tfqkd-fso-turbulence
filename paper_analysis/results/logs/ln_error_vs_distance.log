@@ -1,0 +1,4 @@
+SKR at expansion point (eta_med) -> 0 at 229.76 km ; deterministic SKR -> 0 at 248.85 km
+eX at cut: mean 1.031 2nd -0.920 4th 0.061 | max|err| mean 1.031 2nd 0.920 4th 0.061
+eZ at cut: mean 2.486 2nd -0.062 4th 0.141 | max|err| mean 2.486 2nd 0.162 4th 0.141
+R at cut: mean -14.040 2nd -35.642 4th -24.346 | max|err| mean 14.040 2nd 35.642 4th 24.346
